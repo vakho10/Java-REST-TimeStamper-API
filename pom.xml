@@ -17,10 +17,22 @@
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>timestamper</name>
-
+	
+	<scm>
+		<connection>scm:git:https://github.com/vakho10/Java-REST-TimeStamper-API.git</connection>
+        <developerConnection>scm:git:https://github.com/vakho10/Java-REST-TimeStamper-API.git</developerConnection>
+        <url>git@giturl:repo</url>  
+        <tag>HEAD</tag>
+	</scm>
+	
 	<build>
 		<finalName>timestamper</finalName>
 		<plugins>
+			<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.4.2</version>
+            </plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
